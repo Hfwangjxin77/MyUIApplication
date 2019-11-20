@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyUIApplication</string>
+    <string name="title_activity_main_list">MainListActivity</string>
+</resources>

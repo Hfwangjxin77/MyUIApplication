@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:customp="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.myuiapplication.ItemViewActivity">
+
+    <com.example.myuiapplication.customview.CustomItemView
+        android:id="@+id/customviewitem1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        customp:tvLeft_text="nick"
+        customp:tvRight_text="20"
+        customp:arrow_Visible="true"/>
+    <com.example.myuiapplication.customview.CustomItemView
+        android:id="@+id/customviewitem2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        customp:tvLeft_text="tonny"
+        customp:arrow_Visible="true"/>
+    <com.example.myuiapplication.customview.CustomItemView
+        android:id="@+id/customviewitem3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        customp:tvLeft_text="RMIT Melbourne"
+        customp:tvRight_text="best Uni"
+        customp:arrow_Visible="false"/>
+
+
+</LinearLayout>

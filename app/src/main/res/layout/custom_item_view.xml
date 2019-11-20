@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:background="#898888"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <!-- android:clickable="true" 必须得有，否则 background 点击效果就没用了。-->
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_custom_item_view"
+       android:clickable="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#454444"
+            android:textSize="15sp"
+            android:text="标题"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tvRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:layout_marginRight="5dp"
+                android:textColor="#646464"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/custom_item_view_arrow" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:background="#8A8888"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+</LinearLayout>

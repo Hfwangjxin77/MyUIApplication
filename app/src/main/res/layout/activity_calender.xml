@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:openxu="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalenderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.myuiapplication.customview.CustomCalendar
+            android:id="@+id/cal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            openxu:mMonthRowL="@mipmap/custom_calendar_row_left"
+            openxu:mMonthRowR="@mipmap/custom_calendar_row_right"
+            openxu:mMonthRowSpac="20dip"
+
+            openxu:mTextSizeMonth="20sp"
+            openxu:mTextSizeWeek="17sp"
+            openxu:mTextSizeDay="17sp"
+            openxu:mTextSizePre="10sp"
+
+            openxu:mTextColorMonth="#4b4b4b"
+            openxu:mTextColorWeek="#9e9e9d"
+            openxu:mSelectWeekTextColor="#f67633"
+            openxu:mTextColorDay="#686768"
+            openxu:mTextColorPreFinish="#fc7451"
+            openxu:mTextColorPreUnFinish="#60ba8d"
+            openxu:mTextColorPreNull="#cecdcd"
+            openxu:mSelectTextColor="#ffffff"
+
+            openxu:mMonthSpac="10dip"
+            openxu:mLineSpac="12dip"
+            openxu:mTextSpac="8dip"
+
+            openxu:mCurrentBg="#6E6E6E"
+            openxu:mCurrentBgStrokeWidth="1.5dip"
+            openxu:mCurrentBgDashPath="@array/customCalendar_currentDay_bg_DashPath"
+            openxu:mSelectBg="#fe7f5c"
+            openxu:mSelectRadius="15dip" />
+
+
+        <!-- <CalendarView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
